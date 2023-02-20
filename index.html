@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <header id="cabecalho">
+        <i><i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens"></i>
+        <menu>
+           <a href="#">Home</a>
+           <a href="#">cardapio</a>
+           <a href="#">Delivery</a>
+           <a href="#">Unidades presenciais</a>
+        </menu>
+    </header>
+    <main>
+        <section id="inicial">           
+        
+            <div>
+                <h1>Ice Cream in Brazil</h1>
+                <p>Chegamos ao pais mais animado do mundo! O  melhor sorteve chega para celebrar juntos dos brasilieros a felicidade, a paixão e o calor desse país incrivel.</p>
+                <div class="imagem">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="imagens/sorvete-p.png">
+                        <img src="imagens/sorvete-m.png" alt="">
+                    </picture>
+                </div>   
+            </div>
+        </section>
+        <section id="sobre">
+             <div></div>
+             <div>
+                <h1>Shakes</h1>
+                <p>Nossos produtos são 100% organicos, não possuindo adtivos prejuidicias a nossa sáude. Resumindo, o classico e original soverte! Conheça mais sobre nossos produtos no nosso <a href="cardapio.html"><strong>cardapio!</strong></a></p>
+                <div class="imagem">
+                    <picture>
+                        <img src="imagens/milkshake-p.png" alt="">
+                    </picture>
+                </div>
+             </div>
+        </section>
+        <section id="historia">
+            <h1>História</h1>
+            <p>
+                Criado em 1941, na cidade de Roma, foi criado o primeiro Ice Cream, uma receita de familia que foi se popularizando por toda Italia e temos orgulho de poder dizer que estamos presentes nas casas das familias em toda Europa e América do Norte, chegando a agora as casas brasileiras também!
+            </p>
+        </section>
+    </main>
+    <footer>
+          <p>Site criado por Matheus Freitas &copy;</p>
+    </footer>
+    <script>
+        function clickMenu() {
+    if (itens.style.display =='none') {
+        itens.style.display = 'block'
+        cabecalho.style.height = '30vh'
+     } else {
+         itens.style.display = 'none'
+         cabecalho.style.height = '10vh'
+     }
+ }
+    </script>
+    
+</body>
+</html>
