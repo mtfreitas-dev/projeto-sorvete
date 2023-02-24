@@ -10,21 +10,23 @@ body{
 
 }
 
-header#cabecalho{
+header{
    height: 10vh;
    max-width: 100vw;
    background-color: #B43B68;
    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.442);
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
 
 }
 
+.teste{
+    padding: 25px;
+}
 #burguer{
     font-size: 3em;
     color: white;
-    margin-right: auto;
 }
 
 #itens{
@@ -99,7 +101,6 @@ section#sobre p {
     height: 80vh;
     background: white url(imagens/pexels-somben-chea-1294943.jpg) no-repeat bottom center;
     background-size: cover;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
